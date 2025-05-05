@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAC DZ AM | التعليم للجميع</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(-45deg, #2c3e50, #34495e, #1abc9c, #111);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeText 4s ease-in-out infinite;
+            text-shadow: 0 0 10px white;
+        }
+
+        @keyframes fadeText {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 320px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+
+        .content-box {
+            width: 90%;
+            max-width: 700px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .audio-button {
+            background-color: #FFD700;
+            color: #064635;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-shadow: 0 0 8px black;
+        }
+
+        .audio-button:hover {
+            background-color: #fff;
+            color: #064635;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #FFD700;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .links a:hover {
+            background-color: #16a085;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: white;
+            padding: 10px 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            background-color: #FFD700;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            img { width: 250px; height: 230px; }
+            .content-box { width: 90%; font-size: 1em; }
+            .audio-button { font-size: 1em; padding: 10px 20px; }
+            .social-icons a { font-size: 1em; padding: 8px 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📢 BAC DZ AM - النجاح للجميع</h1>
+    <p class="subtitle"> الباكلوريا يامتياز </p>
+    <div class="container">
+        <img src="hg.jpg" alt="صورة ثابتة">
+    </div>
+
+    <div class="content-box">
+        <h2>📚 الدروس والموارد</h2>
+        <p>دروس تعليمية، مصادر للمراجعة، وأهم النصائح للنجاح في الباك.</p>
+    </div>
+
+    <div class="links">
+        <a href="lessons.html">🎓 جزء من فرحة البكالوريا</a>
+        <a href="courses.html">📖 الدورات والدروس</a>
+        <a href="summaries.html">📜 الملخصات</a>
+        <a href="https://t.me/yourTelegramGroup" target="_blank">💬 انضمام إلى مجموعة Telegram</a>
+    </div>
+
+    <button class="audio-button" onclick="document.getElementById('myAudio').play()">🎶 تشغيل النشيد</button>
+
+    <audio id="myAudio" loop>
+        <source src="nasheed.mp3" type="audio/mp3"> المتصفح لا يدعم تشغيل الصوت.
+    </audio>
+
+    <!-- أيقونات التواصل الاجتماعي -->
+    <div class="social-icons">
+        <a href="https://www.youtube.com/yourchannel" target="_blank">
+            <img src="do.jpg" alt="يوتيوب"> تابعنا على يوتيوب
+        </a>
+        <a href="https://www.facebook.com/yourpage" target="_blank">
+            <img src="df.jpeg" alt="فيسبوك"> تابعنا على فيسبوك
+        </a>
+        <a href="https://www.tiktok.com/@youraccount" target="_blank">
+            <img src="de.png" alt="تيك توك"> تابعنا على تيك توك
+        </a>
+    </div>
+</body>
+
+</html>

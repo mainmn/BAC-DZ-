@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات والدروس - BAC DZ AM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(-45deg, #2c3e50, #34495e, #1abc9c, #111);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .courses-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .course-box {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .course-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        .join-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #FFD700;
+            color: #064635;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .join-button:hover {
+            background-color: white;
+            color: #064635;
+            transform: scale(1.1);
+        }
+
+        .return-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #FFD700;
+            color: #064635;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .return-button:hover {
+            background-color: white;
+            color: #064635;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📖 الدورات والدروس - BAC DZ AM</h1>
+
+    <div class="courses-container">
+        <div class="course-box">
+            <h2>📘 الشعب العلمية</h2>
+            <p>دورات في الرياضيات، العلوم الطبيعية، الفيزياء، التكنولوجيا، والهندسة.</p>
+            <a href="https://t.me/addlist/fjncbAwSXJE5ODk0" target="_blank" class="join-button">🚀 انضم الآن</a>
+        </div>
+
+        <div class="course-box">
+            <h2>📚 الشعب الأدبية</h2>
+            <p>دورات في الأدب، الفلسفة، التاريخ، الجغرافيا، واللغات الأجنبية.</p>
+            <a href="https://t.me/addlist/vUY8VStIomk3OWI0" target="_blank" class="join-button">📖 انضم الآن</a>
+        </div>
+    </div>
+
+    <a href="index.html" class="return-button">🔙 العودة للصفحة الرئيسية</a>
+</body>
+
+</html>
